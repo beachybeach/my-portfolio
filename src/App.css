@@ -4,3 +4,33 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.me {
+  height: 300px;
+  width: 300px;
+  background-image: url("./assets/images/me.JPG");
+  background-size: cover;
+  border-radius: 50%;
+  background-position: 2px -30px;
+  background-repeat: no-repeat;
+}
+
+/*PORTFOLIO PAGE STYLING*/
+.self-portrait {
+  border-radius: 8px;
+}
+
+.portfolio {
+  width: 100%;
+  height: auto;
+}
+
+.project-link,
+.project-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.project-link:hover .card-body {
+  background: lightgray;
+}
