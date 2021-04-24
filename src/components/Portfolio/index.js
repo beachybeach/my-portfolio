@@ -35,6 +35,7 @@ const projects = [
 const Project = ({ project }) => {
   const { title, description, image, url } = project;
   return (
+
     <div class="col mb-4">
       <a className="project-link" href={url} target="_blank" rel="noreferrer">
         <div class="card">
@@ -52,7 +53,8 @@ const Project = ({ project }) => {
 
 const Portfolio = () => {
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="portfolio">
+      <h1 class="projects-title">My Projects</h1>
       <div class="row row-cols-1 row-cols-md-2">
         {projects.map(project => {
           return <Project project={project} />

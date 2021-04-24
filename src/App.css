@@ -3,16 +3,24 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Lobster", cursive;
+  background-image: url("./assets/images/beachy.png");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.App {
+  padding: 0 9.5em;
 }
 
 /*NAVBAR STYLING*/
 
 .nav {
   overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  background-color: #c3d729;
+  position: relative;
+  top: 0;
 }
 
 /* Links inside the navbar */
@@ -25,14 +33,13 @@ body {
   text-decoration: none;
 }
 
-/* Change background on mouse-over */
 .nav a:hover {
   background: #ddd;
   color: black;
 }
 
 .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  margin-top: 30px;
 }
 
 .me {
@@ -43,6 +50,10 @@ body {
   border-radius: 50%;
   background-position: 2px -30px;
   background-repeat: no-repeat;
+}
+
+.jumbotron {
+  background-color: #c3d729;
 }
 
 /*PORTFOLIO PAGE STYLING*/
@@ -63,4 +74,9 @@ body {
 
 .project-link:hover .card-body {
   background: lightgray;
+}
+
+.projects-title {
+  text-align: center;
+  padding-bottom: 15px;
 }

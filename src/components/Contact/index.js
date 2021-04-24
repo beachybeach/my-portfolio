@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <h1>Where you can find me...</h1>
       <div className="icons">
         <a href="https://github.com/beachybeach" target="_blank" rel="noreferrer">
