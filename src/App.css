@@ -48,24 +48,38 @@ hr.solid {
   border-top: 3px solid #c3d729;
 }
 
-div .me {
-  margin-left: 40%;
-}
-
 .me {
-  height: 300px;
-  width: 300px;
   background-image: url("./assets/images/me.JPG");
   background-size: cover;
-  border-radius: 50%;
-  background-position: 2px -30px;
+  background-position: 0px -100px;
   background-repeat: no-repeat;
 }
 
-/*PORTFOLIO PAGE STYLING*/
-.self-portrait {
-  border-radius: 8px;
+div .card-group,
+.about {
+  height: 600px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #c3d729;
 }
+
+.card,
+.about {
+  margin: 10px;
+}
+
+div .card,
+.about {
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.card-about {
+  padding-top: 200px;
+}
+
+/*PORTFOLIO PAGE STYLING*/
 
 .portfolio {
   width: 100%;
