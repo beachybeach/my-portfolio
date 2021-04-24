@@ -4,10 +4,10 @@ const About = () => {
 
   return (
     <div>
-      <div class="jumbotron">
+      <div class="jumbotron bg-transparent text-center">
         <div className="me"></div>
         <h1 class="display-4">Hello, my name is Riley.</h1>
-        <p class="lead">I am a fullstack web developer from Arizona.</p>
+        <h2>I am a fullstack web developer from Arizona.</h2>
       </div>
     </div>
   )
