@@ -10,11 +10,11 @@ function App() {
     <div className="App">
       <Header />
       <About />
-      <hr class="solid"></hr>
+
       <Portfolio />
-      <hr class="solid"></hr>
+
       <Skills />
-      <hr class="solid"></hr>
+
       <Contact />
 
     </div >
