@@ -4,14 +4,12 @@ const About = () => {
 
   return (
     <div>
-      <div class="card-group about">
-
-
-        <div className="card-about">
-          <h1 class="display-4">Hello, my name is Riley.</h1>
-          <h2>I am a fullstack web developer from Arizona.</h2>
+      <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container aos-init aos-animate" data-aos="fade-in">
+          <h1>Riley Beach</h1>
+          <h2>Full Stack Web Developer</h2>
         </div>
-      </div>
+      </section>
     </div>
   )
 }

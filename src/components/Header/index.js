@@ -1,5 +1,5 @@
 import React from "react";
-import Me from '../../assets/images/me.JPG';
+import Me from '../../assets/images/profile.jpeg';
 
 const Header = () => {
   return (
@@ -7,21 +7,25 @@ const Header = () => {
       <header id="header">
         <div className="d-flex flex-column">
           <div className="profile">
-            <img src={Me} alt="me" className="img-fluid rounded-circle"></img>
+            <img src={Me} alt="me" class="img-fluid rounded-circle"></img>
             <h1 className="text-light">
               <a href="index.html">Riley Beach</a>
             </h1>
             <div className="social-links mt-3 text-center">
               <a href="#" class="twitter">
-                <i class="bx bxl-twitter::before">
+                <i class="bx bxl-twitter">
                 </i>
               </a>
               <a href="#" class="instagram">
-                <i class="bx bxl-instagram::before">
+                <i class="bx bxl-instagram">
                 </i>
               </a>
               <a href="#" class="linkedin">
-                <i class="bx bxl-linkedin::before">
+                <i class="bx bxl-linkedin">
+                </i>
+              </a>
+              <a href="#" class="github">
+                <i class="bx bxl-github">
                 </i>
               </a>
             </div>
