@@ -12,20 +12,24 @@ const Header = () => {
               <a href="index.html">Riley Beach</a>
             </h1>
             <div className="social-links mt-3 text-center">
-              <a href="#" class="twitter">
+              <a href="https://twitter.com/beachybeachh" rel="noreferrer" target="_blank" class="twitter">
                 <i class="bx bxl-twitter">
                 </i>
               </a>
-              <a href="#" class="instagram">
+              <a href="https://www.instagram.com/beachybeachhh/" rel="noreferrer" target="_blank" class="instagram">
                 <i class="bx bxl-instagram">
                 </i>
               </a>
-              <a href="#" class="linkedin">
+              <a href="https://www.linkedin.com/in/rileysbeach/" rel="noreferrer" target="_blank" class="linkedin">
                 <i class="bx bxl-linkedin">
                 </i>
               </a>
-              <a href="#" class="github">
+              <a href="https://github.com/beachybeach" rel="noreferrer" target="_blank" class="github">
                 <i class="bx bxl-github">
+                </i>
+              </a>
+              <a href="twitch.tv/beachybeach" rel="noreferrer" target="_blank" class="twitch">
+                <i class="bx bxl-twitch">
                 </i>
               </a>
             </div>

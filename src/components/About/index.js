@@ -1,13 +1,14 @@
 import React from "react";
 
 const About = () => {
-
   return (
     <div>
-      <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-        <div class="hero-container aos-init aos-animate" data-aos="fade-in">
-          <h1>Riley Beach</h1>
-          <h2>Full Stack Web Developer</h2>
+      <section id="about" class="about">
+        <div className="container">
+          <div className="section-title">
+            <h2>About</h2>
+            <p>Hello, my name is Riley Beach and I am a full stack web developer from Phoenix, Arizona.</p>
+          </div>
         </div>
       </section>
     </div>
