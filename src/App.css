@@ -1,5 +1,6 @@
 body {
-  font-family: "Lobster", cursive;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 /*NAVBAR STYLING*/
@@ -147,6 +148,10 @@ section {
   overflow: hidden;
 }
 
+.section-title {
+  padding-bottom: 30px;
+}
+
 #main {
   margin-left: 300px;
 }
@@ -177,6 +182,20 @@ div .card,
 
 .card-about {
   padding-top: 200px;
+}
+
+/*ABOUT SECTION*/
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: black;
+  line-height: 0;
 }
 
 /*PORTFOLIO PAGE STYLING*/
