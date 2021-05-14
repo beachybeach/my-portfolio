@@ -191,11 +191,21 @@ div .card,
   padding: 0;
 }
 
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: #c3d729;
   line-height: 0;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
 }
 
 /*PORTFOLIO PAGE STYLING*/

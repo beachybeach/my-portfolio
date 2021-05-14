@@ -37,7 +37,7 @@ const About = () => {
                     <li>
                       <i class="fas fa-chevron-right"></i>
                       <strong>City:   </strong>
-                      <span>Phoenix, Arizona</span>
+                      <span>  Phoenix, Arizona</span>
 
                     </li>
                   </ul>
@@ -69,7 +69,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
+    </div >
   )
 }
 
