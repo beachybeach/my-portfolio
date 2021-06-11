@@ -143,13 +143,41 @@ h2 {
   min-width: 300px;
 }
 
-section {
+.section {
   padding: 60px 0;
   overflow: hidden;
 }
 
+.section-bg {
+  background: #f5f8fd;
+}
+
 .section-title {
   padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #c3d729;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #c3d729;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
 }
 
 #main {
@@ -176,15 +204,16 @@ div .card-group,
 
 div .card,
 .about {
-  text-align: center;
   justify-content: space-evenly;
 }
 
-.card-about {
-  padding-top: 200px;
-}
-
 /*ABOUT SECTION*/
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #c3d729;
+}
 
 .about .content ul {
   list-style: none;
@@ -197,6 +226,10 @@ div .card,
   align-items: center;
 }
 
+.about .content ul strong {
+  margin-right: 10px;
+}
+
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
@@ -204,13 +237,13 @@ div .card,
   line-height: 0;
 }
 
-.about .content ul strong {
-  margin-right: 10px;
+.about .content p:last-child {
+  margin-bottom: 0;
 }
 
 /*PORTFOLIO PAGE STYLING*/
 
-.portfolio {
+#portfolio {
   width: 100%;
   height: auto;
 }

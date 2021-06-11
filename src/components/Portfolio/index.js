@@ -4,6 +4,7 @@ import notetaker from '../../assets/images/note-taker.png';
 import teamprofile from '../../assets/images/teamprofile.png';
 import budgettracker from '../../assets/images/budgettracker.png';
 
+
 const projects = [
   {
     title: "Plenty of Pups",
@@ -36,9 +37,9 @@ const Project = ({ project }) => {
   const { title, description, image, url } = project;
   return (
 
-    <div class="col mb-4">
+    <div class="col">
       <a className="project-link" href={url} target="_blank" rel="noreferrer">
-        <div class="card">
+        <div class="card" id="project">
           <img src={image} class="card-img-top" alt="..."></img>
           <div class="card-body">
             <h5 class="card-title">{title}</h5>
@@ -53,10 +54,10 @@ const Project = ({ project }) => {
 
 const Portfolio = () => {
   return (
-    <div className="portfolio" id="portfolio">
-      <h1 class="projects-title">My Projects</h1>
-      <hr class="solid"></hr>
-      <div class="row row-cols-1 row-cols-md-2">
+    <div className="container portfolio" id="portfolio">
+      <h1 className="projects-title">My Projects</h1>
+      <hr className="solid"></hr>
+      <div className="row row-cols-2">
         {projects.map(project => {
           return <Project project={project} />
         })}
