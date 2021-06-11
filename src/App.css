@@ -187,6 +187,7 @@ h2 {
 /* Solid border */
 hr.solid {
   border-top: 3px solid #c3d729;
+  width: 50%;
 }
 
 div .card-group,

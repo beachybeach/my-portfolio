@@ -55,6 +55,7 @@ const Project = ({ project }) => {
 const Portfolio = () => {
   return (
     <div className="container portfolio" id="portfolio">
+      <hr className="solid"></hr>
       <h1 className="projects-title">My Projects</h1>
       <hr className="solid"></hr>
       <div className="row row-cols-2">
