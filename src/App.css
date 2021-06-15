@@ -279,6 +279,16 @@ div .card,
 
 #find-me {
   text-align: center;
+  font-size: 10px;
+}
+
+.icons,
+i {
+  padding: 20px;
+}
+
+.find-me-title {
+  font-size: 45px;
 }
 
 /*FOOTER*/
