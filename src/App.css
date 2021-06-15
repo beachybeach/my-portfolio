@@ -282,6 +282,13 @@ div .card,
   font-size: 10px;
 }
 
+.form {
+  padding: 30px;
+  border-style: solid;
+  margin: 100px;
+  border-color: #c3d729;
+}
+
 .icons,
 i {
   padding: 20px;
