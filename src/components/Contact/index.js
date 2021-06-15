@@ -4,19 +4,6 @@ const Contact = () => {
   return (
     <div class="mb-4" id="contact">
 
-      <h1>Where you can find me...</h1>
-      <div className="icons">
-        <a href="https://github.com/beachybeach" target="_blank" rel="noreferrer">
-          <i class="fab fa-github fa-7x" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/rileysbeach/" target="_blank" rel="noreferrer">
-          <i class="fab fa-linkedin-in fa-7x"></i>
-        </a>
-        <a href="https://stackoverflow.com/users/15348326/riley-beach" target="_blank" rel="noreferrer">
-          <i class="fab fa-stack-overflow fa-7x"></i>
-        </a>
-      </div>
-
       <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
 
       <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me.</p>
@@ -105,6 +92,21 @@ const Contact = () => {
 
 
       </div>
+      <div id="find-me">
+        <h1 class="find-me-title">Where you can find me...</h1>
+        <div className="icons">
+          <a href="https://github.com/beachybeach" target="_blank" rel="noreferrer">
+            <i class="fab fa-github fa-7x" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rileysbeach/" target="_blank" rel="noreferrer">
+            <i class="fab fa-linkedin-in fa-7x"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/15348326/riley-beach" target="_blank" rel="noreferrer">
+            <i class="fab fa-stack-overflow fa-7x"></i>
+          </a>
+        </div>
+      </div>
+
     </div>
   )
 }

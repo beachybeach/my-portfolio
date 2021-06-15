@@ -277,6 +277,10 @@ div .card,
   text-align: center;
 }
 
+#find-me {
+  text-align: center;
+}
+
 /*FOOTER*/
 #footer {
   padding: 15px;
