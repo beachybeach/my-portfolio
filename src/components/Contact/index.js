@@ -96,16 +96,16 @@ const Contact = () => {
         <h1 class="find-me-title">Where you can find me...</h1>
         <div class="icons">
           <a href="https://github.com/beachybeach" target="_blank" rel="noreferrer">
-            <i class="fab fa-github fa-7x" aria-hidden="true"></i>
+            <i class="fab fa-github fa-7x bottom" aria-hidden="true"></i>
           </a>
           <a href="https://www.linkedin.com/in/rileysbeach/" target="_blank" rel="noreferrer">
-            <i class="fab fa-linkedin-in fa-7x"></i>
+            <i class="fab fa-linkedin-in fa-7x bottom"></i>
           </a>
           <a href="https://stackoverflow.com/users/15348326/riley-beach" target="_blank" rel="noreferrer">
-            <i class="fab fa-stack-overflow fa-7x"></i>
+            <i class="fab fa-stack-overflow fa-7x bottom"></i>
           </a>
           <a href="https://www.instagram.com/beachybeachhh" target="_blank" rel="noreferrer">
-            <i class="fab fa-instagram fa-7x"></i>
+            <i class="fab fa-instagram fa-7x bottom"></i>
           </a>
         </div>
       </div>
