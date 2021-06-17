@@ -5,12 +5,7 @@ body {
 
 /*NAVBAR STYLING*/
 
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
+#navbar {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
@@ -23,11 +18,9 @@ body {
   background-color: white;
   color: darkgreen;
   font-size: 22px;
-  display: inline-block;
   line-height: 1;
   padding: 6px 0;
   margin-right: 4px;
-  border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
@@ -68,19 +61,10 @@ body {
   text-decoration: none;
 }
 
-.nav-menu > ul > li {
-  position: relative;
-  white-space: nowrap;
-}
-
 .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.nav-menu {
-  padding: 30px 0 0 0;
 }
 
 .nav-menu a i {
@@ -194,8 +178,8 @@ div .card-group,
 .about {
   height: 600px;
   width: 100%;
-  padding: 10px;
-  margin: 10px;
+  padding-top: 50px;
+  padding-bottom: 0;
 }
 
 .card,
@@ -287,11 +271,16 @@ div .card,
   border-style: solid;
   margin: 100px;
   border-color: #c3d729;
+  color: #c3d729;
 }
 
 .icons,
 .bottom {
   padding: 20px;
+}
+
+.list-unstyled {
+  padding: 0;
 }
 
 .find-me-title {
@@ -302,7 +291,7 @@ div .card,
 #footer {
   padding: 15px;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   position: fixed;
   left: 0;
   bottom: 0;
