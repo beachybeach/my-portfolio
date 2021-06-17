@@ -164,10 +164,6 @@ h2 {
   margin-bottom: 0;
 }
 
-#main {
-  margin-left: 300px;
-}
-
 /* Solid border */
 hr.solid {
   border-top: 3px solid #c3d729;
@@ -292,10 +288,9 @@ div .card,
   padding: 15px;
   color: white;
   font-size: 15px;
-  position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 100%;
   z-index: 9999;
   background: #c3d729;
 }
