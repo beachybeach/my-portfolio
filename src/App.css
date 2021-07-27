@@ -9,7 +9,7 @@ body {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background-color: #c3d729;
+  background-color: #c3d7296e;
   overflow-y: auto;
 }
 
@@ -264,10 +264,8 @@ div .card,
 
 .form {
   padding: 30px;
-  border-style: solid;
   margin: 100px;
-  border-color: #c3d729;
-  color: #c3d729;
+  color: white;
 }
 
 .icons,
@@ -281,6 +279,10 @@ div .card,
 
 .find-me-title {
   font-size: 45px;
+}
+
+#contact {
+  background-color: #c3d7296e;
 }
 
 /*FOOTER*/

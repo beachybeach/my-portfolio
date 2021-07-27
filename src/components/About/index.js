@@ -16,7 +16,9 @@ const About = () => {
               <div class="about-inner inner">
                 <div class="section-title">
                   <h2 class="title">About Me</h2>
-                  <p>I am a bootcamp certified full stack web developer with a love for React but a desire for constant and continuous learning.</p>
+                  <p>Hello, I am a bootcamp certified full stack web developer from Phoenix, Arizona.
+                    As a developer I have a strong love for React but a constant desire for continuous learning.
+                  </p>
                 </div>
               </div>
             </div>

@@ -4,8 +4,8 @@ import Me from '../../assets/images/profile.jpeg';
 const Header = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg nav-menu" id="navbar">
-        <a class="navbar-brand" href="#">Riley Beach</a>
+      <nav class="navbar navbar-expand-lg fixed-top nav-menu" id="navbar">
+        <a class="navbar-brand" href="#github.com/beachybeach">Riley Beach</a>
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="#About">About <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#skills">Skills</a>
