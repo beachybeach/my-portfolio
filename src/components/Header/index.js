@@ -1,53 +1,43 @@
-import React from "react";
-import Me from '../../assets/images/profile.jpeg';
+import React, { useState, useEffect } from 'react';
+
+
+
 
 const Header = () => {
-  return (
-    <div>
-      <nav class="navbar navbar-expand-lg fixed-top nav-menu" id="navbar">
-        <a class="navbar-brand" href="#github.com/beachybeach">Riley Beach</a>
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#About">About <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#skills">Skills</a>
-          <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-          <a class="nav-item nav-link" href="#contact">Contact</a>
-        </div>
+  const [navbar, setNavbar] = useState(false);
 
-      </nav>
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true)
+    } else {
+      setNavbar(false);
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground);
+
+  return (
+
+    <div>
+      <header id="header" className={navbar ? 'fixed-top d-flex justify-content-center align-items-center header-scrolled' : 'fixed-top d-flex justify-content-center align-items-center header-transparent'}>
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="#about">About</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto active" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto active" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+        </nav>
+      </header>
     </div >
   )
 }
 
 export default Header;
 
-{/*<div>
-  <header id="header">
-    <div className="d-flex flex-column">
-      <div className="profile">
-        <img src={Me} alt="me" class="img-fluid rounded-circle"></img>
-        <h1 className="text-light">
-          <a href="index.html">Riley Beach</a>
-        </h1>
-        <div className="social-links mt-3 text-center">
-          <a href="https://twitter.com/beachybeachh" rel="noreferrer" target="_blank" class="twitter">
-            <i class="bx bxl-twitter">
-            </i>
-          </a>
-          <a href="https://www.instagram.com/beachybeachhh/" rel="noreferrer" target="_blank" class="instagram">
-            <i class="bx bxl-instagram">
-            </i>
-          </a>
-          <a href="https://www.linkedin.com/in/rileysbeach/" rel="noreferrer" target="_blank" class="linkedin">
-            <i class="bx bxl-linkedin">
-            </i>
-          </a>
-          <a href="https://github.com/beachybeach" rel="noreferrer" target="_blank" class="github">
-            <i class="bx bxl-github">
-            </i>
-          </a>
-          <a href="twitch.tv/beachybeach" rel="noreferrer" target="_blank" class="twitch">
-            <i class="bx bxl-twitch">
-            </i>
-          </a>
-        </div>
-</div> */}

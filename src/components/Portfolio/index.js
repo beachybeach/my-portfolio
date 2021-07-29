@@ -56,7 +56,7 @@ const Portfolio = () => {
   return (
     <div className="container portfolio" id="portfolio">
 
-      <h1 className="projects-title">My Projects</h1>
+      <h2>My Projects</h2>
 
       <div className="row row-cols-2">
         {projects.map(project => {

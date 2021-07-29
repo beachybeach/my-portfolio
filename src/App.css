@@ -3,87 +3,183 @@ body {
   font-weight: bold;
 }
 
-/*NAVBAR STYLING*/
-
-#navbar {
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background-color: #c3d7296e;
-  overflow-y: auto;
-}
-
-#header .profile .social-links a {
-  background-image: initial;
-  background-color: white;
-  color: darkgreen;
-  font-size: 22px;
-  line-height: 1;
-  padding: 6px 0;
-  margin-right: 4px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  justify-content: space-around;
-}
-
-#header .profile .social-links a:hover {
+a {
   color: #c3d729;
-}
-
-#header .profile img {
-  margin: 15px auto;
-  display: block;
-  width: 120px;
-  border: 8px solid #c3d729;
-}
-
-#header .profile h1 a,
-#header .profile h1 a:hover {
-  color: white;
   text-decoration: none;
 }
 
-#header .profile h1 {
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  text-align-last: center;
-}
-
-/* Links inside the navbar */
-.nav-menu a:hover li:hover,
-.active > a {
-  text-decoration-color: initial;
-  color: rgb(229, 224, 216);
+a:hover {
+  color: darkgreen;
   text-decoration: none;
 }
 
-.nav-menu * {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "montserrat", sans-serif;
+}
+
+/*NAVBAR STYLING*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #ffb727;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #ffc550;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  z-index: 997;
+  transition: all 0.5s;
+  height: 80px;
+  background: #c3d729ab;
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  height: 60px;
+  background: #c3d729ab;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
   margin: 0;
   padding: 0;
+  display: flex;
   list-style: none;
+  align-items: center;
 }
 
-.nav-menu a i {
-  font-size: 30px;
-  padding-right: 8px;
+.navbar li {
+  position: relative;
 }
 
-.nav-menu a {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
-  padding: 12px 15px;
-  margin-bottom: 8px;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: #fff;
+  white-space: nowrap;
   transition: 0.3s;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: white;
 }
 
-.nav-menu a:hover {
-  color: darkgreen;
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 400;
+  color: #3b434a;
+  letter-spacing: 1px;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #ffb727;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
 }
 
 #hero {

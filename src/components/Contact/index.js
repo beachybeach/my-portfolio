@@ -18,6 +18,8 @@ const Contact = () => {
                 <h3>Hello,</h3>
                 <p>
                   I'd love to hear from you!
+                  <br></br>
+                  Please fill out this form with your information and a brief message, or follow the one of the thinks to my social media. Thank you for stopping by!
                 </p>
                 <div class="social-links">
                   <a href="twitter.com" class="twitter"><i class="bi bi-twitter"></i></a>
