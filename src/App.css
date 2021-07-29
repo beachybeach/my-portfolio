@@ -1,105 +1,185 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
-/*NAVBAR STYLING*/
-
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background-color: #c3d729;
-  overflow-y: auto;
-}
-
-#header .profile .social-links a {
-  background-image: initial;
-  background-color: white;
-  color: darkgreen;
-  font-size: 22px;
-  display: inline-block;
-  line-height: 1;
-  padding: 6px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  justify-content: space-around;
-}
-
-#header .profile .social-links a:hover {
+a {
   color: #c3d729;
-}
-
-#header .profile img {
-  margin: 15px auto;
-  display: block;
-  width: 120px;
-  border: 8px solid #c3d729;
-}
-
-#header .profile h1 a,
-#header .profile h1 a:hover {
-  color: white;
   text-decoration: none;
 }
 
-#header .profile h1 {
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  text-align-last: center;
-}
-
-/* Links inside the navbar */
-.nav-menu a:hover li:hover,
-.active > a {
-  text-decoration-color: initial;
-  color: rgb(229, 224, 216);
+a:hover {
+  color: darkgreen;
   text-decoration: none;
 }
 
-.nav-menu > ul > li {
-  position: relative;
-  white-space: nowrap;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "montserrat", sans-serif;
 }
 
-.nav-menu * {
+/*NAVBAR STYLING*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #ffb727;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #ffc550;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  z-index: 997;
+  transition: all 0.5s;
+  height: 80px;
+  background: #c3d729ab;
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  height: 60px;
+  background: #c3d729ab;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
   margin: 0;
   padding: 0;
+  display: flex;
   list-style: none;
+  align-items: center;
 }
 
-.nav-menu {
-  padding: 30px 0 0 0;
+.navbar li {
+  position: relative;
 }
 
-.nav-menu a i {
-  font-size: 30px;
-  padding-right: 8px;
-}
-
-.nav-menu a {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
-  padding: 12px 15px;
-  margin-bottom: 8px;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: #fff;
+  white-space: nowrap;
   transition: 0.3s;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: white;
 }
 
-.nav-menu a:hover {
-  color: darkgreen;
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 400;
+  color: #3b434a;
+  letter-spacing: 1px;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #ffb727;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
 }
 
 #hero {
@@ -111,7 +191,7 @@ body {
   background-clip: initial;
   background-color: initial;
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   background-size: cover;
   color: white;
 }
@@ -129,7 +209,7 @@ h2 {
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
-  position: absolute;
+
   bottom: 0;
   top: 0;
   left: 0;
@@ -180,10 +260,6 @@ h2 {
   margin-bottom: 0;
 }
 
-#main {
-  margin-left: 300px;
-}
-
 /* Solid border */
 hr.solid {
   border-top: 3px solid #c3d729;
@@ -194,8 +270,8 @@ div .card-group,
 .about {
   height: 600px;
   width: 100%;
-  padding: 10px;
-  margin: 10px;
+  padding-top: 50px;
+  padding-bottom: 0;
 }
 
 .card,
@@ -268,45 +344,168 @@ div .card,
   padding-bottom: 15px;
 }
 
-/*SKILLS*/
-.skills-title {
-  text-align: center;
+/*CONTACT*/
+
+#contact {
+  padding: 20px;
+}
+.section-bg {
+  background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+}
+.contact .contact-about h3 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c3d729;
+}
+.contact .contact-about p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "montserrat", serif;
+  color: #c3d729;
 }
 
-.skills {
-  text-align: center;
+.contact .social-links {
+  padding-bottom: 20px;
 }
 
-#find-me {
+.contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: #c3d729;
+  line-height: 0;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
   text-align: center;
-  font-size: 10px;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #c3d729;
 }
 
-.form {
-  padding: 30px;
-  border-style: solid;
-  margin: 100px;
+.contact .social-links a:hover {
+  background: darkgreen;
+  color: #fff;
+}
+
+.contact .info {
+  color: #5a656e;
+}
+.contact .info i {
+  font-size: 32px;
+  color: #c3d729;
+  line-height: 0;
+  margin-right: 15px;
+}
+
+.contact .info p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #c3d729;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: #c3d729;
 }
 
-.icons,
-.bottom {
-  padding: 20px;
+.contact .php-email-form button[type="submit"] {
+  background: #c3d729;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
 }
 
-.find-me-title {
-  font-size: 45px;
+.contact .php-email-form button[type="submit"]:hover {
+  background: #c3d72970;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*FOOTER*/
 #footer {
   padding: 15px;
   color: white;
-  font-size: 20px;
-  position: fixed;
+  font-size: 15px;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 100%;
   z-index: 9999;
   background: #c3d729;
 }
