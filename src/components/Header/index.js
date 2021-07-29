@@ -29,6 +29,9 @@ const Header = () => {
               <a class="nav-link scrollto active" href="#portfolio">Portfolio</a>
             </li>
             <li>
+              <a class="nav-link scrollto active" href="#skills">Skills</a>
+            </li>
+            <li>
               <a class="nav-link scrollto active" href="#contact">Contact</a>
             </li>
           </ul>
