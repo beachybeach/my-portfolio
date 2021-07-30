@@ -6,7 +6,7 @@ const Contact = () => {
       <section class="contact section-bg" id="contact">
         <div class="container">
           <div class="section-title">
-            <h2>Contact</h2>
+            <h3>Contact</h3>
 
             <p>Do you have any questions? Please do not hesitate to contact me.</p>
           </div>

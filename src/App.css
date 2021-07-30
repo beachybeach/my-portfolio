@@ -181,16 +181,6 @@ h6 {
   color: white;
 }
 
-.h1,
-h1 {
-  font-size: 5rem;
-}
-
-.h2,
-h2 {
-  font-size: 4rem;
-}
-
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
@@ -208,29 +198,20 @@ h2 {
   min-width: 300px;
 }
 
-.section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
 .section-bg {
   background: #f5f8fd;
 }
 
-.section-title {
-  padding-bottom: 30px;
-}
-
-.section-title h2 {
+.section-title h3 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
   position: relative;
   color: #c3d729;
 }
 
-.section-title h2::after {
+.section-title h3::after {
   content: "";
   position: absolute;
   display: block;
@@ -245,33 +226,9 @@ h2 {
   margin-bottom: 0;
 }
 
-/* Solid border */
-hr.solid {
-  border-top: 3px solid #c3d729;
-  width: 50%;
-}
-
-div .card-group,
-.about {
-  height: 600px;
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 0;
-}
-
-.card,
-.about {
-  margin: 10px;
-}
-
-div .card,
-.about {
-  justify-content: space-evenly;
-}
-
 /*ABOUT SECTION*/
 
-.about .content h3 {
+.about .content {
   font-weight: 700;
   font-size: 26px;
   color: #c3d729;
@@ -306,8 +263,7 @@ div .card,
 /*PORTFOLIO PAGE STYLING*/
 
 #portfolio {
-  width: 100%;
-  height: auto;
+  padding: 40px;
 }
 
 .card-body {
@@ -493,4 +449,12 @@ div .card,
   width: 100%;
   z-index: 9999;
   background: #c3d729;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
 }
