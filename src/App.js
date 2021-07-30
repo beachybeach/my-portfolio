@@ -15,7 +15,7 @@ function App() {
       <main id="main">
         <About />
         <Portfolio />
-
+        <Skills />
         <Contact />
         <Footer />
       </main>

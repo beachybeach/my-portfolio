@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  background: grey;
 }
 
 a {
@@ -11,15 +12,6 @@ a {
 a:hover {
   color: darkgreen;
   text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "montserrat", sans-serif;
 }
 
 /*NAVBAR STYLING*/
@@ -167,6 +159,8 @@ h6 {
   visibility: visible;
 }
 
+/*HERO SECTION*/
+
 #hero {
   background: url("./assets/images/me-main.jpg") top center;
   background-image: url("./assets/images/me-main.jpg");
@@ -179,6 +173,10 @@ h6 {
   height: 75vh;
   background-size: cover;
   color: white;
+}
+
+#hero h2 {
+  font-size: 3rem;
 }
 
 #hero:before {
@@ -227,6 +225,10 @@ h6 {
 }
 
 /*ABOUT SECTION*/
+
+#about {
+  padding: 15px;
+}
 
 .about .content {
   font-weight: 700;

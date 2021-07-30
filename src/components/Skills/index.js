@@ -3,16 +3,24 @@ import React from "react";
 const Skills = () => {
   return (
     <div>
-      <div className="skills" id="skills">
-        <h1 className="skills-title" >Skills</h1>
-        <hr className="solid"></hr>
-        <h3>Languages</h3>
-        <div className="skill-item"></div>
-        <div className="skill-item"></div>
-        <div className="skill-item"></div>
-        <div className="skill-item"></div>
-        <div className="skill-item"></div>
-      </div>
+      <section className="skills" id="skills">
+        <div class="container">
+          <div class="section-title">
+            <h3>Skills</h3>
+          </div>
+          <div className="skill-item">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div className="skill-item">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div className="skill-item">
+            <i class="fab fa-js"></i>
+          </div>
+          <div className="skill-item"></div>
+          <div className="skill-item"></div>
+        </div>
+      </section>
     </div>
   )
 }
