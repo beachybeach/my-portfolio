@@ -1,7 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  background: grey;
 }
 
 a {
@@ -227,7 +226,8 @@ a:hover {
 /*ABOUT SECTION*/
 
 #about {
-  padding: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .about .content {
@@ -265,9 +265,9 @@ a:hover {
 /*PORTFOLIO PAGE STYLING*/
 
 #portfolio {
-  padding: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
-
 .card-body {
   background-color: #c3d729;
 }
@@ -285,6 +285,45 @@ a:hover {
 .projects-title {
   text-align: center;
   padding-bottom: 15px;
+}
+
+/*SKILLS SECTION*/
+
+.skills-subtitle h4 {
+  text-align: center;
+  color: #c3d729;
+  font-weight: bold;
+}
+
+.skills-subtitle h4::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: #c3d729;
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-width: 1px;
+}
+
+.language {
+  padding-left: 38%;
+}
+
+#skills .skill-item {
+  font-size: 5rem;
+  padding: 15px;
+  display: inline-block;
+}
+
+#skills p {
+  font-size: 20px;
+  padding: 15px;
+  display: inline-block;
 }
 
 /*CONTACT*/
