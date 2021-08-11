@@ -314,10 +314,24 @@ a:hover {
   padding-left: 38%;
 }
 
-#skills .skill-item {
-  font-size: 5rem;
-  padding: 15px;
+.logos {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  text-align: center;
   display: inline-block;
+  margin: 1em;
+}
+
+.logo strong {
+  text-align: center;
+  display: block;
+  margin-top: 0.5em;
 }
 
 #skills p {
