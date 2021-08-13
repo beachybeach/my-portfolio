@@ -204,6 +204,7 @@ a:hover {
   font-weight: bold;
   margin-bottom: 15px;
   padding-bottom: 15px;
+  padding-top: 15px;
   position: relative;
   color: #c3d729;
 }
@@ -525,7 +526,7 @@ a:hover {
 .contact .contact-about h3 {
   font-size: 36px;
   margin: 0 0 10px 0;
-  padding: 0;
+  padding: 15px;
   line-height: 1;
   font-weight: 300;
   letter-spacing: 3px;
@@ -537,10 +538,11 @@ a:hover {
   line-height: 24px;
   font-family: "montserrat", serif;
   color: #c3d729;
+  padding: 10;
 }
 
 .contact .social-links {
-  padding-bottom: 20px;
+  padding-top: 15px;
 }
 
 .contact .social-links a {
@@ -566,6 +568,7 @@ a:hover {
 
 .contact .info {
   color: #5a656e;
+  padding: 20px;
 }
 .contact .info i {
   font-size: 32px;
