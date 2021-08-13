@@ -37,17 +37,21 @@ const Project = ({ project }) => {
   const { title, description, image, url } = project;
   return (
 
-    <div class="col">
-      <a className="project-link" href={url} target="_blank" rel="noreferrer">
-        <div class="card" id="project">
-          <img src={image} class="card-img-top" alt="..."></img>
-          <div class="card-body">
-            <h5 class="card-title">{title}</h5>
-            <p class="card-text">{description}</p>
-          </div>
+
+    <div class="col-lg-6 col-md-6 portfolio-item filter-app" id="project">
+      <div class="portfolio-wrap">
+        <img src={image} class="card-img-top" alt="..."></img>
+
+        <div class="portfolio-info">
+          <h5>{title}</h5>
+          <p>{description}</p>
         </div>
-      </a>
-    </div>
+        <div class="portfolio-links">
+          <a href={url} class="portfolio-lightbox" title={title}> </a>
+        </div>
+      </div>
+    </div >
+
   )
 }
 
@@ -55,12 +59,12 @@ const Project = ({ project }) => {
 const Portfolio = () => {
   return (
     <div>
-      <section id="portfolio" class="portfolio">
-        <div className="container" id="portfolio">
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
           <div class="section-title">
             <h3>My Projects</h3>
           </div>
-          <div className="row row-cols-2">
+          <div class="row portfolio-container">
             {projects.map(project => {
               return <Project project={project} />
             })}
