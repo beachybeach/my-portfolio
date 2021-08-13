@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
-
+  const [navitem, setNavitem] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNavbar(true)
@@ -14,7 +14,16 @@ const Header = () => {
     }
   }
 
+  const underlineSection = () => {
+    if (window.scrollY >= 100) {
+      setNavitem(true)
+    } else {
+      setNavitem(false);
+    }
+  }
+
   window.addEventListener('scroll', changeBackground);
+  window.addEventListener('scroll', underlineSection);
 
   return (
 
@@ -22,7 +31,7 @@ const Header = () => {
       <header id="header" className={navbar ? 'fixed-top d-flex justify-content-center align-items-center header-scrolled' : 'fixed-top d-flex justify-content-center align-items-center header-transparent'}>
         <nav class="navbar" id="navbar">
           <ul>
-            <li>
+            <li className={navitem ? 'color-black' : 'color-white'}>
               <a class="nav-link scrollto active" href="#about">About</a>
             </li>
             <li>

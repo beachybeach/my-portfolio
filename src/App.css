@@ -228,6 +228,7 @@ a:hover {
 #about {
   padding-bottom: 20px;
   padding-top: 20px;
+  background-color: #c3d72942;
 }
 
 .about .content {
@@ -289,6 +290,11 @@ a:hover {
 
 /*SKILLS SECTION*/
 
+#skills {
+  padding-top: 20px;
+  background-color: #c3d72942;
+}
+
 .skills-subtitle h4 {
   text-align: center;
   color: #c3d729;
@@ -345,9 +351,7 @@ a:hover {
 #contact {
   padding: 20px;
 }
-.section-bg {
-  background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
-}
+
 .contact .contact-about h3 {
   font-size: 36px;
   margin: 0 0 10px 0;
