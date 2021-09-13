@@ -233,10 +233,24 @@ a:hover {
   background-color: #c3d72942;
 }
 
-.about .content {
-  font-weight: 700;
-  font-size: 26px;
+.about .content h3 {
   color: #c3d729;
+}
+
+.about .content h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #c3d729;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+}
+
+.about .content p {
+  font-weight: 700;
+  color: black;
 }
 
 .about .content ul {

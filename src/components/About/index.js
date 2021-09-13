@@ -17,11 +17,10 @@ const About = () => {
               <img src={me} class="img-fluid" alt="me"></img>
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content">
-              <h3>Web Developer</h3>
+              <h3>My Story</h3>
               <p class="fst-italic">
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Before I became a developer, I went to Arizona State University where I received a Bachelor's Degree in Marketing. After my degree, I realized that my true passion was with computers. I built my own PC, have played video games since I was a kid, and loved learning how my machine operated. From there I spent a year teaching myself how to code before taking a professional bootcamp to further solidify my knowledge. I learned both the front end as well as the back end but learned that I have a strong love for building React websites. Keep scrolling to see some of the projects that I have built!
 
               </p>
             </div>
